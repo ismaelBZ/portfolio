@@ -1,0 +1,90 @@
+
+body {
+    margin: 10px 20px;
+}
+
+/* NAVIGATION GENERAL */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItemWrapper {width: 100px;}
+
+/* Back Button */
+
+#backButton {
+    border: none;
+    background-color: #fff;
+}
+
+#backButton:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#backButton:active {
+    font-weight: bold;
+    transform: scale(0.98, 0.98)
+}
+
+/* Work In Preview */
+
+#workInPreview {
+    color: #000;
+    text-decoration: none;
+}
+
+/* About Me */
+
+#aboutMeButton {
+    border: none;
+    background-color: #fff;
+}
+
+#aboutMeButton:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#aboutMeButton:active {
+    font-weight: bold;
+    transform: scale(0.98, 0.98)
+}
+
+/* DEVELOPER NAME */
+
+#developerlName {
+    margin-top: 2.5rem;
+    margin-bottom: 0;
+    font-size: 9.325rem;
+    line-height: 9.325rem;
+}
+
+#developerlName > span {
+    margin-left: 9rem;
+    display: block;
+}
+
+/* Portifolio's works */
+
+.portfolioWorks {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+
+.portfolioWorks img{
+    width: 100%;
+    max-width: fit-content;
+    height: 25rem;
+    object-position: left;
+    object-fit: cover;
+}
+
+#tributePage {
+    object-position: 15%; 
+}
