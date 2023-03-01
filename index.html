@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-US">
+    
     <head>
+
         <meta charset="UTF-8" />
         <title>IsmaelBZ - Portfolio</title>
         <meta name="keywords" content="Desenvolvedor Front End, Desenvolvedor Web, Front End Developer, Web Developr, Front End, Html, HTML, Css, CSS, JavaScript, Java Script" />
         <meta name="description" content="Ismael Bet Zoletti personal Portfolio, developed based on Farhad Ghaderi portfolio design, found in 'https://dribbble.com/shots/20295397-Farhad-Ghaderi-Portfolio-2020'" />
         <meta name="author" content="Ismael Bet Zoletti" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- NORMALIZE CSS-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- CSS STYLES-->
+            <!-- CSS STYLES-->
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
- 
                 <!-- TOP NAVIGATION-->
-            
             <nav>
                 <ul>
-                    <li class="navigation-items">
-                        <button id="home-button">{Home}</button>
+                    <li>
+                        <!--Mobile-->
+                        <button id="homeIcon" class="navIcon"> 
+                            <img src="./imgs/icons/nav/home_FILL0_wght300_GRAD0_opsz48.svg" alt="home" /> 
+                        </button>
+                        
+                        <!--Desktop-->
+                        <button id="homeBtn" class="navBtn">{Home}</button>
                     </li>  
+                    
                     <li>
-                        <button id="work-in-preview-button">{work}</>
+                        <!--Mobile-->
+                        <button id="workInPreviewIcon" class="navIcon">
+                            <img src="imgs/icons/nav/menu_FILL0_wght300_GRAD0_opsz48.svg" alt="menu" />
+                        </button>
+                        
+                        <!--Desktop-->
+                        <button id="workInPreview" class="navBtn">{work}</button>
                     </li>
+                    
                     <li>
-                        <button id="about-me-button">{about me}</button>
+                        <!--Mobile-->
+                        <button id="aboutIcon" class="navIcon">
+                            <img src="./imgs/icons/nav/account_circle_FILL0_wght300_GRAD0_opsz48.svg" alt="profile" />
+                        </button>
+
+                        <!--Desktop-->
+                        <button id="aboutBtn" class="navBtn">{about me}</button>
                     </li>
                 </ul>
             </nav>
 
-                <div class="navItemWrapper">
-                </div>
 
-                <div class="navItemWrapper">
-                </div>  
-
-                <div class="navItemWrapper">
-                </div>
-
-
-            <!--DEVELOPER NAME-->
+                <!--DEVELOPER NAME-->
 
         <h1 id="developerlName">Ismael 
                                 <span>Zoletti.</span></h1>
 
-            <!-- PORTFOLIO WORKS -->
 
-        <div class="portfolioWorks">
+            <!--  WORKS -->
 
-            <div class="freeCodeCamp">
-                <a href="https://ismaelbz.github.io/tributePage/">
-                    <img id="tributePage" src="./imgs/mahatmaTest.png" target="_blank">
-                </a>
-            </div>
+        <div class="work-wrapper">    
+            <div class="works">
 
-            <div class="freeCodeCamp">
-                <a href="https://ismaelbz.github.io/landingPage/">
-                    <img id="landingPage" src="./imgs/landingPageTest.png" target="_blank">
-                </a>
-            </div>
+                <div class="freeCodeCamp">
+                    <a class="container" href="https://ismaelbz.github.io/tributePage/">
+                        <img class="work" id="tributePage" src="./imgs/mahatmaTest.png" target="_blank">
+                    </a>
+                </div>
 
-            
-            <div id="work2" class="works">
-                
+                <div class="freeCodeCamp">
+                    <a class="container" href="https://ismaelbz.github.io/landingPage/">
+                        <img class="work" id="landingPage" src="./imgs/landingPageTest.png" target="_blank">
+                    </a>
+                </div>
+
+                <div class="freeCodeCamp">
+                    <a class="container" href="https://ismaelbz.github.io/surveyForm/">
+                        <img class="work" id="surveyForm" src="./imgs/surveyForm.png" target="_blank">
+                    </a>
+                </div>
             </div>
         </div>
     </body>

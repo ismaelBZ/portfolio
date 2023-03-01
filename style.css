@@ -1,90 +1,161 @@
-
-body {
-    margin: 10px 20px;
+:root {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
-/* NAVIGATION GENERAL */
+body {
+    margin: 15px 20px;
+}
+
+/* NAVIGATION */
 
 nav {
+    margin-left: -10px;
+}
+
+nav ul {
     display: flex;
+    margin-block: 0;
+    padding-inline-start: 0;
     justify-content: space-between;
     align-items: center;
 }
 
-.navItemWrapper {width: 100px;}
+nav ul li {
+    list-style: none;
+    text-align: center;
+}
 
-/* Back Button */
+.navBtn {
+    display:none;
+}
 
-#backButton {
+.navIcon {
     border: none;
     background-color: #fff;
 }
 
-#backButton:hover {
-    font-weight: bold;
+.navIcon img:hover {
     cursor: pointer;
+    transform: scale(1.035);
 }
 
-#backButton:active {
+.navIcon img:active {
     font-weight: bold;
-    transform: scale(0.98, 0.98)
-}
-
-/* Work In Preview */
-
-#workInPreview {
-    color: #000;
-    text-decoration: none;
-}
-
-/* About Me */
-
-#aboutMeButton {
-    border: none;
-    background-color: #fff;
-}
-
-#aboutMeButton:hover {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#aboutMeButton:active {
-    font-weight: bold;
-    transform: scale(0.98, 0.98)
+    transform: scale(0.98)
 }
 
 /* DEVELOPER NAME */
 
 #developerlName {
-    margin-top: 2.5rem;
+    margin-top: 1.25rem;
     margin-bottom: 0;
-    font-size: 9.325rem;
-    line-height: 9.325rem;
+    font-size: 13vw;
 }
 
 #developerlName > span {
-    margin-left: 9rem;
+    margin-left: 9vw;
     display: block;
 }
 
-/* Portifolio's works */
+/* WORKS */
 
-.portfolioWorks {
-    margin-top: 2.5rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 1rem;
+.works {
+    width: 90vw;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.portfolioWorks img{
-    width: 100%;
-    max-width: fit-content;
-    height: 25rem;
-    object-position: left;
-    object-fit: cover;
+.container {
+    display: inline-block;
+    max-height: 20vh;
 }
- 
-#tributePage {
-    object-position: 15%; 
+
+ .work{
+    width: 100%;    
+}
+
+@media only screen and (min-width: 462px) {
+
+    /* NAVIGATION */
+
+    nav {
+        margin: 0;
+    }
+
+    nav ul li {
+        width: 100px;
+    }
+
+    .navIcon {
+        display: none;
+    }
+
+    .navBtn {
+        margin: 0 auto;
+        display: block;
+        border: none;
+        background-color: #fff;
+    }
+
+    .navBtn:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .navBtn:active {
+        font-weight: bold;
+        transform: scale(0.98)
+    }
+
+    #homeBtn {
+        float: left;
+    }
+
+    #aboutBtn {
+        float: right;
+    }
+
+
+    /* DEVELOPER NAME */
+
+    #developerlName {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        font-size: 10vw;
+    }
+
+    /* WORKS */
+
+    .works {
+        width: 100%;
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+    .container {
+        overflow: hidden;
+        min-height: 25vh;
+        height: 100%;
+        max-height: 100%;
+        border: 3px solid gray
+    }
+
+    .work {
+        height: 100%;
+        object-fit: cover;
+        object-position: top left;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    
+    #developerlName {
+        margin-top: 2.5rem;
+    }
 }
