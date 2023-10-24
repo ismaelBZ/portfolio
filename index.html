@@ -5,47 +5,79 @@
 
         <meta charset="UTF-8" />
         <title>IsmaelBZ - Portfolio</title>
-        <meta name="keywords" content="Desenvolvedor Front End, Desenvolvedor Web, Front End Developer, Web Developr, Front End, Html, HTML, Css, CSS, JavaScript, Java Script" />
         <meta name="description" content="Ismael Bet Zoletti personal Portfolio, developed based on Farhad Ghaderi portfolio design, found in 'https://dribbble.com/shots/20295397-Farhad-Ghaderi-Portfolio-2020'" />
+        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="Desenvolvedor Front End, Desenvolvedor Web, Front End Developer, Web Developr, Front End, Html, HTML, Css, CSS, JavaScript, Java Script" />
         <meta name="author" content="Ismael Bet Zoletti" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <!-- CSS STYLES-->
-        <link rel="stylesheet" href="style.css">
+        <!-- FavIcon -->
+        <link rel="icon" href="./imgs/icons/favIcon-dark.png" type="image/png" />
+        <link rel="icon" href="./imgs/icons/favIcon-light.png" type="image/png" />
+
+
+        <!-- CSS STYLES-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles-modified.css">
+
+        <!-- for Sharing -->
+        <meta property="og:title" content="Ismael Bet Zoletti - Front-End Developer" />
+        <meta property="og:description" content="Ismael Bet Zoletti personal portfolio" />
+        <!-- <meta property="og:image" content="" /> -->
+        <!-- <meta property="og:url" content="" /> -->
+        
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Person",
+                "name": "Ismael Bet Zoletti",
+                "jobTitle": "Desenvolvedor Front-End",
+                "url": "",
+                "sameAs": [
+                    "https://www.linkedin.com/in/ismaelbetzoletti/",
+                    "https://www.github.com/ismaelBZ"
+                ]
+            }
+        </script>
     </head>
 
     <body>
-                <!-- TOP NAVIGATION-->
             <nav>
                 <ul>
                     <li>
                         <!--Mobile-->
-                        <button id="homeIcon" class="navIcon"> 
-                            <img src="./imgs/icons/nav/home_FILL0_wght300_GRAD0_opsz48.svg" alt="home" /> 
-                        </button>
+                        <a id="homeIcon" class="mobile nav-link"> 
+                            { &#8646; } 
+                        </a>
                         
                         <!--Desktop-->
-                        <button id="homeBtn" class="navBtn">{Home}</button>
+                        <a id="feedbackBtn" class="desktop nav-link">
+                            { feedback }
+                        </a>
                     </li>  
                     
                     <li>
                         <!--Mobile-->
-                        <button id="workInPreviewIcon" class="navIcon">
-                            <img src="imgs/icons/nav/menu_FILL0_wght300_GRAD0_opsz48.svg" alt="menu" />
-                        </button>
+                        <a id="workInPreviewIcon" class="mobile">
+                            <!-- { &#8794; } -->
+                        </a>
                         
                         <!--Desktop-->
-                        <button id="workInPreview" class="navBtn">{work}</button>
+                        <a id="workInPreview" class="desktop">
+                            { work }
+                        </a>
                     </li>
                     
                     <li>
                         <!--Mobile-->
-                        <button id="aboutIcon" class="navIcon">
-                            <img src="./imgs/icons/nav/account_circle_FILL0_wght300_GRAD0_opsz48.svg" alt="profile" />
-                        </button>
+                        <a id="aboutIcon" class="mobile nav-link">
+                            { i }
+                        </a>
 
                         <!--Desktop-->
-                        <button id="aboutBtn" class="navBtn">{about me}</button>
+                        <a id="aboutBtn" class="desktop nav-link">
+                            { about me }
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -53,33 +85,49 @@
 
                 <!--DEVELOPER NAME-->
 
-        <h1 id="developerlName">Ismael 
-                                <span>Zoletti.</span></h1>
+        <!-- <h1 class="developer-name">Ismael
+                                <span><span>[ ...</span>Zoletti<span> ]</span></span></h1>
+        -->
+        
+        <h1><img class="developer-name" src="./imgs/logo/logo.png" alt="Ismael Bet Zoletti" /></h1>
+       
+        <h2 class="occupation">Full Stack Developer</h2> 
+        
+        <!--  WORKS -->
+            <ol class="works-wrapper">    
+                
+                <li class="work-item small-item">
+                    <figure class="item-wrapper">
+                        <!-- <a class="container" href="https://ismaelbz.github.io/tributePage/">
+                        </a> -->    
+                        <figcaption class="work-title"><span class="work-iterator">[1]</span><span class="work-name">TRIBUTE PAGE</span></figcaption>
+                        <img class="work-image" id="tributePage" src="./imgs/mahatmaTest.png" />
+                    </figure>
+                </li>
 
+                <li class="work-item medium-item">
+                    <!-- <a class="container" href="https://ismaelbz.github.io/landingPage/">
+                    </a> -->
+                    <figure class="item-wrapper">
+                        <figcaption class="work-title"><span class="work-iterator">[2]</span><span class="work-name">LANDING PAGE</span></figcaption>
+                        <img class="work-image" id="landingPage" src="./imgs/landingPageTest.png" />
+                    </figure>
+                </li> 
 
-            <!--  WORKS -->
-
-        <div class="work-wrapper">    
-            <div class="works">
-
-                <div class="freeCodeCamp">
-                    <a class="container" href="https://ismaelbz.github.io/tributePage/">
-                        <img class="work" id="tributePage" src="./imgs/mahatmaTest.png" target="_blank">
-                    </a>
-                </div>
-
-                <div class="freeCodeCamp">
-                    <a class="container" href="https://ismaelbz.github.io/landingPage/">
-                        <img class="work" id="landingPage" src="./imgs/landingPageTest.png" target="_blank">
-                    </a>
-                </div>
-
+                <li class="work-item">
+                    <figure class="item-wrapper">
+                        <figcapiton class="work-title"><span class="work-iterator">[3]</span><span class="work-name">SURVEY FORM</span></figcaption></figcapiton>
+                        <img class="work-image" id="surveyForm" src="./imgs/surveyForm.png" />
+                    </figure>
+                </li>
+            </ol>    
+        <!-- 
                 <div class="freeCodeCamp">
                     <a class="container" href="https://ismaelbz.github.io/surveyForm/">
                         <img class="work" id="surveyForm" src="./imgs/surveyForm.png" target="_blank">
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
