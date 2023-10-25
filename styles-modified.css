@@ -207,16 +207,11 @@ nav>ul>li:last-of-type {
 @media screen and (min-width: 1024px) {
     
     .developer-name {
+        width: 90%;
+        max-width: 1250px;
         margin-top: 32px;
-        max-width: 1300px;
     }
-    /* .develope-name > span {
-        margin-top: 17px;
-        margin-left: 103px;
-    }
-    .developer-name > span > span {
-        font-size: 57px;
-    } */
+    
     .occupation {
         font-size: 72px;
         max-width: 1627px;
@@ -228,5 +223,6 @@ nav>ul>li:last-of-type {
         font-size: 0.8rem;
         right: -4.5vw;
     }
+
 }
 
