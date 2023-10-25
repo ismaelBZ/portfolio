@@ -208,18 +208,18 @@ nav>ul>li:last-of-type {
     
     .developer-name {
         margin-top: 32px;
-        font-size: 123px;
-        letter-spacing: 2.4vw;
+        max-width: 1300px;
     }
-    .develope-name > span {
+    /* .develope-name > span {
         margin-top: 17px;
         margin-left: 103px;
     }
     .developer-name > span > span {
         font-size: 57px;
-    }
+    } */
     .occupation {
         font-size: 72px;
+        max-width: 1627px;
     }
     .work-name > span {
         font-size: 0.8rem;
