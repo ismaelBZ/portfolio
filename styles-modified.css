@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;900&display=swap');
 @font-face {
     font-family: "TT Moons Trial";
     src: url("./fonts/type_type/TT\ Moons\ Trial\ Regular.otf");
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;900&display=swap');
 
 html {
     overflow-x: hidden;
@@ -51,21 +50,27 @@ nav>ul>li:last-of-type {
     text-align: right;
 }
 
-.nav-link {
+.nav-btn {
     line-height: 100%;
     font-size: 1rem;
-    letter-spacing: 1vw;
+    letter-spacing: 0.15vw;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
 }
 
-.nav-link:hover {
+.nav-btn:hover {
     font-weight: bold;
     font-size: 103%;
     cursor: pointer;
 }
 
-.nav-link:active {
+.nav-btn:active {
     font-weight: bold;
     font-size: 103%;
+}
+
+.about-me {
+    display: none;
 }
 
 .developer-name {
@@ -95,6 +100,7 @@ nav>ul>li:last-of-type {
     list-style: none;
     overflow: hidden;
 }
+
 .work-title {
     padding-bottom: 1.3rem;
 }
