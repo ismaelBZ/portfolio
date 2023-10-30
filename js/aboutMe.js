@@ -2,6 +2,7 @@ const aboutMe = window.document.querySelector(".about-me");
 const display = window.getComputedStyle(aboutMe).display;
 const mobileBtn = window.document.querySelector("#aboutMobile");
 const desktopBtn = window.document.querySelector("#aboutDesktop");
+const aboutInfo = window.document.querySelectorAll(".about-info")
 
 function showAboutMe() {
   const aboutMe = window.document.querySelector(".about-me");
@@ -15,10 +16,12 @@ function showAboutMe() {
   }
 }
 
-mobileBtn.addEventListener(onclick, showAboutMe)
-desktopBtn.addEventListener(onclick, showAboutMe)
+mobileBtn.onclick = showAboutMe;
+desktopBtn.addEventListener("click", showAboutMe)
 
 window.onclick = function(event) {
-  console.log(event.target)
+  if (event.target === aboutMe) {
+    aboutMe.style.display = "none"
+  }
 }
 
