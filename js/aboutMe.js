@@ -5,7 +5,7 @@ const desktopBtn = window.document.querySelector("#aboutDesktop");
 const aboutInfo = window.document.querySelectorAll(".about-info");
 
 // ABOUT ME HEIGHT
-aboutMe.style.height = `${window.innerHeight + window.scrollY}px`;
+aboutMe.style.height = `${window.document.scrollingElement.offsetHeight + 50}px`;
 
 function showAboutMe() {
   const aboutMe = window.document.querySelector(".about-me");
@@ -27,7 +27,6 @@ function adjustDivWrapperHeigth() {
 mobileBtn.onclick = showAboutMe;
 desktopBtn.addEventListener("click", showAboutMe)
 
-window.onload = adjustDivWrapperHeigth;
 window.onresize = adjustDivWrapperHeigth;
 
 window.onclick = function(event) {
