@@ -68,24 +68,27 @@ nav>ul>li:last-of-type {
     font-weight: bold;
     font-size: 103%;
 }
+.about-me-wrapper {
+    position: relative;
+}
 
 .about-me {
-    position: relative;
+    position: absolute;
     top: -50px;
     left: -50px;
-    width: 130%;
-    height: 110vh;
+    width: 105vw;
+    height: 100vh;
     z-index: 5;
-    background-color: transparent;
 }
-.about-me-wrapper {
+.about-me > div {
     position: absolute;
     top: 50px;
     left: 50px;
-    max-width: 70%;
+    width: 100%;
+    max-width: 95vw;
     background-color: #999;
 }
-.about-me-wrapper > p {
+.about-info {
     letter-spacing: 0.125rem;
     line-height: 1.1rem;
     font-size: 0.8rem;
@@ -106,7 +109,7 @@ nav>ul>li:last-of-type {
 }
 
 .works-wrapper {
-    width: 90vw;
+    width: 100%;
     margin-top: 1.25rem;
     position:relative;
     display: flex;
@@ -195,7 +198,6 @@ nav>ul>li:last-of-type {
     }
     
     .works-wrapper {
-        width: 98%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
