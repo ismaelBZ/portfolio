@@ -81,15 +81,15 @@ nav>ul>li:last-of-type {
     height: 100vh;
     z-index: 5;
 }
-.about-me > div {
+.about-me-info-wrapper {
     position: absolute;
     top: 50px;
     left: 50px;
     width: 100%;
     max-width: 95vw;
-    background-color: #999;
+    background-color: #fff;
 }
-.about-info {
+.about-me-info {
     letter-spacing: 0.125rem;
     line-height: 1.1rem;
     font-size: 0.8rem;
