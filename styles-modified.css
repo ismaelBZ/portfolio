@@ -82,17 +82,53 @@ nav>ul>li:last-of-type {
     z-index: 5;
 }
 .about-me-info-wrapper {
+    width: 100%;
+    max-width: 88vw;
+    padding-right: -38px;
+    padding-left: 20px;
+    padding-bottom: 30px;
     position: absolute;
     top: 50px;
     left: 50px;
-    width: 100%;
-    max-width: 95vw;
     background-color: #fff;
 }
+.about-me-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+    padding: 20px;
+    /* float: right; */
+}
+.about-me-text {
+    margin: 0 auto;
+    width: 100%;
+}
 .about-me-info {
+    margin: 0 auto;
+    padding-bottom: 18px;
+    width: 85%;
     letter-spacing: 0.125rem;
-    line-height: 1.1rem;
+    line-height: 1.4rem;
     font-size: 0.8rem;
+}
+.badge-list {
+    width: 95.7%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(85px, 1fr));
+}
+.badge-list-item {
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+}
+.badges {
+    color: #2b2b2b;
+    font-size: 2.4rem;
+    /* padding-bottom: 3px; */
+}
+.badge-name {
+    margin-top: 5px;
 }
 .developer-name {
     max-width: 100%;
@@ -188,6 +224,11 @@ nav>ul>li:last-of-type {
         font-size: 1rem;
         letter-spacing: 0.15vw;
     }
+    .about-me-info-wrapper {
+        padding-top: 3vh;
+        width: 100%;
+        max-width: 95vw;
+    }
     .developer-name {
         margin-top: 1vh;
         margin-bottom: 2vh;
@@ -227,7 +268,13 @@ nav>ul>li:last-of-type {
     .under-construction-wrapper {
         right: -6vw;
     }
-
+    .about-me-info {
+        margin: 0;
+        max-width: 1024px;
+    }
+    .about-me-img {
+        float: right;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -249,6 +296,26 @@ nav>ul>li:last-of-type {
         font-size: 0.8rem;
         right: -4.5vw;
     }
+    .about-me-img {
+        margin-right: 5vw;
+    };
+    .badge-list {
+        margin-top: 35vh;
+    }
+}
 
+@media screen and (min-width: 1440px) {
+
+    /* .about-me-info-wrapper {
+        right: 0px;
+        left: unset;
+    } */
+    .about-me-info {
+        float: right;
+    }
+    .stack {
+        clear: right;
+    }
+ 
 }
 
