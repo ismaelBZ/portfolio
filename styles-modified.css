@@ -206,6 +206,10 @@ nav>ul>li:last-of-type {
 .work-image{
     width: 100%;
 }
+.work-image:hover {
+    filter: grayscale(85%);
+    transition: 350ms;
+}
 /* .container {
     display: inline-block;
     max-height: 20vh;
@@ -250,6 +254,15 @@ nav>ul>li:last-of-type {
         padding-top: 3vh;
         width: 100%;
         max-width: 95vw;
+    }
+    .about-me-text {
+        width: 75%;
+        max-width: 1024px;
+        margin-left: 10vw;
+    }
+    .badge-list-wrapper {
+        margin:  0 auto;
+        width: 80%;
     }
     .badge-list {
         justify-content: space-evenly;
@@ -339,13 +352,15 @@ nav>ul>li:last-of-type {
     }
     .about-me-text {
         width: 98%;
+        margin-left: 0;
         margin-top: 1.6vh;
     }
     .about-me-info {
         /* float: right; */
     }
     .badge-list-wrapper {
-        margin: 0 30px;
+        width: 100%;
+        margin: 0 16px;
         clear: right;
     }
     .badge-list {
