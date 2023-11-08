@@ -318,6 +318,8 @@ nav>ul>li:last-of-type {
         padding-right: 3vw;
     }
     .work-image {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: top center;
     }
