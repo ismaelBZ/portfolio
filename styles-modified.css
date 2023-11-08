@@ -152,6 +152,7 @@ nav>ul>li:last-of-type {
 }
 .contact-item:hover {
     font-weight: bold;
+    opacity: 0.6;
 }
 .developer-name {
     max-width: 100%;
@@ -176,8 +177,23 @@ nav>ul>li:last-of-type {
     gap: 1rem;
 }
 .work-item {
+    display: block;
+    box-sizing: content-box;
     list-style: none;
-    overflow: hidden;
+    overflow: auto;
+}
+
+.work-item:hover {
+    display: block;
+    padding: 5px;
+    box-shadow:
+        0px 1.3px 2.9px rgba(0, 0, 0, 0.003),
+        0px 3.3px 4.7px rgba(0, 0, 0, 0.007),
+        0px 5.3px 6.3px rgba(0, 0, 0, 0.013),
+        0px 7.1px 8px rgba(0, 0, 0, 0.017),
+        0px 8.4px 10.1px rgba(0, 0, 0, 0.019),
+        0px 9px 15px rgba(0, 0, 0, 0.02);
+    transition: 180ms;
 }
 
 .work-title {
@@ -205,11 +221,12 @@ nav>ul>li:last-of-type {
 }
 .work-image{
     width: 100%;
+    height: auto;
+    max-height: 369px;
+    object-fit: cover;
+    object-position: top center;
 }
-.work-image:hover {
-    filter: grayscale(85%);
-    transition: 350ms;
-}
+
 /* .container {
     display: inline-block;
     max-height: 20vh;
@@ -302,7 +319,7 @@ nav>ul>li:last-of-type {
     }
     .work-image {
         object-fit: cover;
-        object-position: 100% 100%;
+        object-position: top center;
     }
     .under-construction-wrapper {
         right: -6vw;

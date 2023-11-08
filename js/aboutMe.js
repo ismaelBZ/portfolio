@@ -3,8 +3,8 @@ const display = window.getComputedStyle(aboutMe).display;
 const mobileBtn = window.document.querySelector("#aboutMobile");
 const desktopBtn = window.document.querySelector("#aboutDesktop");
 const aboutInfo = window.document.querySelectorAll(".about-info");
-const devNameAndOccupation = window.document.querySelector(".dev-name-occupation")
-const aboutMeInfoWrapper = window.document.querySelector(".about-me-info-wrapper")
+const devNameAndOccupation = window.document.querySelector(".dev-name-occupation");
+const aboutMeInfoWrapper = window.document.querySelector(".about-me-info-wrapper");
 
 // ABOUT ME HEIGHT SETTINGS
 
@@ -16,8 +16,8 @@ function adjustDivWrapperHeigth() {
 }
 function adjustAboutMeInfoWrapperHeight() {
   aboutMeInfoWrapper.style.minHeight = `${ 
-                                      parseInt(window.getComputedStyle(devNameAndOccupation).height) + 50
-                                    }px`
+    parseInt(window.getComputedStyle(devNameAndOccupation).height) + 50
+  }px`
   console.log(`Adjust the height`);
 }
 
@@ -49,6 +49,4 @@ window.onclick = function(event) {
     aboutMe.style.display = "none"
   }
 }
-
-
 
