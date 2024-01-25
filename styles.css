@@ -317,10 +317,17 @@ nav>ul>li:last-of-type {
     .work-name {
         padding-right: 3vw;
     }
+
     .work-image {
-        object-fit: cover;
-        object-position: top center;
+        width: auto;
+        height: 100%;
     }
+
+    .vertical {
+        object-fit: cover;
+        transform: translateX(-13%);
+    }
+
     .under-construction-wrapper {
         right: -6vw;
     }
@@ -357,6 +364,12 @@ nav>ul>li:last-of-type {
     };
     .badge-list {
         margin-top: 35vh;
+    }
+    .work-image {
+        width: 100%;
+    }
+    .vertical {
+        transform: translateX(0%)
     }
 }
 
