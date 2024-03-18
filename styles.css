@@ -5,6 +5,10 @@
   --borderStyle: 1px solid black;
 }
 
+html {
+  scroll-behavior: smoth;
+}
+
 * {
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -257,7 +261,7 @@ h1 {
   }
 
   .line3 {
-    margin-left: -18px;
+    margin-left: -20px;
   }
 
   .work-image {
