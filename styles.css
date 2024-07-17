@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Abyssinica+SIL&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
   --paddingLeftRight: 15px;
@@ -135,16 +137,20 @@ h1 {
 
 .prop {
   color: #B08354;
-  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .value {
   color: #637E57;
-  font-weight: 600;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
 }
 
 .link {
   text-decoration: underline;
+  font-weight: 600;
 }
 
 .bbt0 {
