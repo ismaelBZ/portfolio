@@ -129,6 +129,22 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 5%;
+}
+
+
+.prop {
+  color: #B08354;
+  font-weight: 600;
+}
+
+.value {
+  color: #637E57;
+  font-weight: 600;
+}
+
+.link {
+  text-decoration: underline;
 }
 
 .bbt0 {
@@ -274,7 +290,7 @@ h1 {
   }
 
   .card > div {
-    min-width: 145px;
+    min-width: 180px;
   }
 
   .work-image-large {
