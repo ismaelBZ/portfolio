@@ -88,25 +88,27 @@ nav {
 
 .line1 {
     margin-left: 10%;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.35;
 }
 
 .line2 {
-    align-self: flex-end;
-    margin-right: 2%;
-    font-size: 2rem;
-    line-height: 1;
+    align-self: flex-start;
+    margin-left: 3%;
+    font-size: 1.5rem;
+    line-height: 1.75;
 }
 
 .line3 {
-    margin-left: 2%;
-    font-size: 1.5rem;
+    align-self: flex-end;
+    margin-right: 10%;
+    font-size: 1.75rem;
     line-height: 1.35;
 }
 
 .line4 {
     align-self: center;
+    margin-left: -10%;
     font-size: 1.575rem;
     line-height: 1.5;
 }
@@ -292,6 +294,22 @@ nav {
 }
 
 @media only screen and (min-width: 620px) {
+
+    
+    .line1 {
+        justify-self: center;
+        font-size: 2rem;
+    }
+
+    
+    .line3 {
+        align-self: center;
+        margin-right: 0;
+        margin-left: 100px;
+        line-height: 1.1;
+    }
+
+    
 
     .work-image {
         display: none;
