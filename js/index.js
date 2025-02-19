@@ -1,21 +1,17 @@
-const homeLink = document.querySelector(".home");
 const catalogLink = document.querySelector(".catalog");
 const aboutLink = document.querySelector(".about");
-const contactLink = document.querySelector(".contact");
 
-homeLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.getElementById("").offsetTop;
-});
 catalogLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.getElementById("").offsetTop;
+    e.preventDefault();
+    const catalogOffset = document.getElementById("catalog").offsetTop;
+    window.scrollTo(0, catalogOffset - 57);
 });
+
 aboutLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.getElementById("about").offsetTop;
+    e.preventDefault();
+    const aboutOffset = document.getElementById("about").offsetTop;
+    console.log(aboutOffset);
+    window.scrollTo(0, aboutOffset - 56);
 });
-contactLink.addEventListener("click", (e) => {
-  e.preventDefault();
-  document.getElementById("contact").offsetTop;
-});
+
+
